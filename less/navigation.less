@@ -1,10 +1,8 @@
 // Navigation code here
 
 .top-nav {
-  display: flex;
+  .display(center, center);
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   margin: auto;
   margin-top: 10px;
   // border: 1px solid red;
@@ -12,13 +10,11 @@
   background: rgba(238, 238, 238, 1);
   width: 90%;
   h2 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    .display();
     margin-bottom: 20px;
   }
   nav {
-    display: flex;
+    .display(space-evenly,center);
     margin-left: 25%;
     width: 50%;
     justify-content: space-evenly;
