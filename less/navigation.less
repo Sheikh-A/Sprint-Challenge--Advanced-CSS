@@ -1,6 +1,7 @@
 // Navigation code here
 
 .top-nav {
+  .transition();
   .display(center, center);
   flex-direction: column;
   margin: auto;
@@ -9,9 +10,20 @@
   height: 100px;
   background: rgba(238, 238, 238, 1);
   width: 90%;
+
+  @media @phone {
+    // border: 1px solid blue;
+    width: 100%;
+  }
+
+
+
   h2 {
     .display();
     margin-bottom: 20px;
+    @media @phone {
+      margin: auto;
+    }
   }
   nav {
     .display(space-evenly,center);
@@ -19,6 +31,11 @@
     width: 50%;
     justify-content: space-evenly;
     align-content: center;
+    @media @phone {
+      width: 100%;
+      margin: auto;
+      margin-top: 2px;
+    }
     a {
       text-decoration: none;
       color: black;
