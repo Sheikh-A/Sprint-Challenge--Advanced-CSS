@@ -1,0 +1,228 @@
+Sign in Page
+Home Content
+
+.home {
+  .transition();
+  opacity: 2;
+
+  .intro {
+    img {
+      .border-radius(10px);
+      .transition();
+      @media @phone {
+        height: 150px;
+
+
+      }
+    }
+
+    h2 {
+      padding: 15px;
+      .transition();
+    }
+
+    p {
+      padding:0 15px;
+      .transition();
+    }
+
+  }
+
+  .space-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .transition();
+    .main-space-image {
+
+      @media @phone {
+      width: 90%;
+      }
+    }
+
+    .disappear {
+      @media @phone {
+        display:none;
+      }
+    }
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+      // .transform();
+    }
+  }
+
+  .visit-planets {
+    padding: 15px;
+
+    h3 {
+      margin-top: 11px;
+      .transition();
+    }
+
+    p {
+      margin-top: 13px;
+      .transition();
+    }
+  }
+
+  .walk {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    .transition();
+    @media @phone {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      padding: 0 15px;
+    }
+
+    .walk-text {
+      width: 50%;
+      .transition();
+      @media @phone {
+        width: 100%;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        .transition();
+        @media @phone {
+          margin-top: 20px;
+        }
+      }
+
+      p {
+        margin-bottom: 26px;
+        .transition();
+      }
+
+      .btn {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        .custom-btn(100px, black, white);
+        .display();
+        height: 30px;
+        align-content: center;
+        @media @phone {
+          width: 100%;
+          height: 70px;
+
+        }
+      }
+    }
+
+    .walk-img {
+      width: 46%;
+      margin-left: 4%;
+      @media @phone {
+        width: 90%;
+        justify-content: flex-start;
+        margin: 0;
+        margin-top: 20px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+}// home
+
+
+.newpageimage {
+  .display();
+  width: 20vw;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+.textNewPage {
+  .display();
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30%;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  .display();
+  margin-left: 42%;
+  margin-top: 10%;
+  background: yellow;
+  .transition();
+}
+
+.custom-select select {
+  display: flex; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
