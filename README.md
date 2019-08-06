@@ -33,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+>Adaptive layouts borrow from the speed of a fixed layout but accommodate different devices at specific breakpoints in design. For example, an adaptive website may have hard coded pixels used for layout using media queries for different devices.
+>Responsive layouts combine features of fixed, adaptive, and fluid websites together into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
 
 2. Describe what it means to be mobile first vs desktop first.
+>It means what you decide to start building your web application on i.e. do you want to start with Mobile first and then build min-widths that follow for people with desktops OR do you want to start with desktop and use max widths for people viewing your content on mobile.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+>This converts the text font to 10px so it is easy to use rem to double or triple your font size within elements. Instead, use a % based unit to be more accessible. A great trick is to use 62.5% as the base value because then you can convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. That means 1rem would equate to 10px throughout the document!
 
 4. How would you describe preprocessing to someone new to CSS?
+>Preprocessing is an easier way to write CSS where you can create variables, functions, and mixins(with parameters) to simpilfy your code. This is great for creating DRY code and is helpful when you are writing the same lines of CSS multiple times.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+>Love: Mixins with PARAMETERS!!! So much easier to create borders and flexbox. Trouble: Just understanding functions, and using the more advanced one OR how do I create my own function?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +62,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
@@ -90,7 +96,7 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
